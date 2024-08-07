@@ -1333,17 +1333,17 @@ async def handle_message(message: types.Message) -> None:
 
 
 
-async def main() -> None:
-    session = AiohttpSession(proxy='http://proxy.server:3128')
-    bot = Bot(token='6606236242:AAFj4FaySsTXxbHXgqHmQD6iSrFfNORdhkE', session=session)
-    #bot = Bot('6606236242:AAEv2NK18R07gUnqk1O_hOJubvP-25YMSmI', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
-    await set_default_commands(bot)
-    await dp.start_polling(bot)
-    #register_handlers(dp)
 #async def main() -> None:
-#    bot = Bot('6606236242:AAFlHP2zlHhs956QKruEWHvouVO5aGSngdc', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+#    session = AiohttpSession(proxy='http://proxy.server:3128')
+#    bot = Bot(token='6606236242:AAFj4FaySsTXxbHXgqHmQD6iSrFfNORdhkE', session=session)
+#    #bot = Bot('6606236242:AAEv2NK18R07gUnqk1O_hOJubvP-25YMSmI', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 #    await set_default_commands(bot)
 #    await dp.start_polling(bot)
+    #register_handlers(dp)
+async def main() -> None:
+    bot = Bot('6606236242:AAFlHP2zlHhs956QKruEWHvouVO5aGSngdc', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    await set_default_commands(bot)
+    await dp.start_polling(bot)
 #    register_handlers(dp)
 
 
